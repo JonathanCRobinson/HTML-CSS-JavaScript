@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Beasts and Magical Creatures</title>
+    <link rel="shortcut icon" href="../images/unicorn.ico">
+    <link rel="stylesheet" href="../styles/form.css">
+    <link rel="stylesheet" href="../styles/slicknav.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../js/jquery.slicknav.min.js"></script>
+	<script type="text/javascript">
+    	$(document).ready(function(){
+			$('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+    	});
+    </script>
+</head>
+<body>
+    <header>
+        <a href="../index.html" class= "current"><img src="../images/oldwyvern.gif" alt="Ancient Wyvern"></a>
+        <h2>Beasts and Magical Creatures</h2>
+        <h3>Legends From Forgotten Worlds</h3>
+    </header>
+    <nav id="mobile_menu"></nav>
+    <nav id="nav_menu">
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="form.html" class="current">Forms</a></li>
+            <li><a href="../landsentinel/index.html">Land Sentinel</a></li>
+            <li><a href="../oceanicleviathan/index.html">Oceanic Leviathan</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h1>
+                Forms Page
+            </h1>
+	    <form id="new_user_form" action="submission.html" method="get">
+	    <fieldset>
+		<legend>Personal Information</legend>
+		<label for="first_name">First name:</label>
+		<input type="text" name="first_name" id="first_name" autofocus required><br>
+		<label for="last_name">Last name:</label>
+		<input type="text" name="last_name" id="last_name" required><br>
+		<label for="address">Address:</label>
+		<input type="text" name="address" id="address" required><br>
+		<label for="city">City:</label>
+		<input type="text" name="city" id="city" required><br>
+		<label for="state">State:</label>
+		<input type="text" name="state" id="state" required><br>
+		<label for="zip">Zip Code:</label>
+		<input type="text" name="zip" id="zip" required
+			placeholder="xxxxx or xxxxx-xxxx"
+			pattern="^\d{5}(-\d{4})?$" title="Must be 5 or 9 digits"><br>
+	    </fieldset>
+	    <fieldset>
+		<legend>Login Information</legend>
+		<label for="email">E-mail:</label>
+		<input type="email" name="email" id="email" required><br>
+		<label for="phone">Phone Number:</label>
+		<input type="tel" name="phone" id="phone" 
+			placeholder="Optional"
+			pattern="\d{10}"
+			title="Must be 9999999999 format"><br>
+		<label for="password">Password:</label>
+		<input type="password" name="password" id="password" maxlength="8" required
+			placeholder="8 characters"
+			title="Must be at least 8 characters long."><br>
+	    </fieldset>
+	    <fieldset>
+		<legend>About yourself (optional)</legend>
+		<label for="date_of_birth">Date of Birth</label>
+		<input type="date" name="date_of_birth" id="date_of_birth"><br>
+		<label>Favorite Beast:</label><br>
+		<input type="radio" name="favorite_beast" id="favorite_beast1" value="Land Sentinel">
+		<label for="favorite_beast1">Land Sentinel</label><br>
+		<input type="radio" name="favorite_beast" id="favorite_beast2" value="Oceanic Leviathan">
+		<label for="favorite_beast2">Oceanic Leviathan</label><br><br>
+		<label>Favorite Elements:</label><br>
+		<input type="checkbox" name="element" id="element1" value="Earth">
+		<label for="element1" >Earth</label><br>
+		<input type="checkbox" name="element" id="element2" value="Wind">
+		<label for="element2" >Wind</label><br>
+		<input type="checkbox" name="element" id="element3" value="Fire">
+		<label for="element3" >Fire</label><br>
+		<input type="checkbox" name="element" id="element4" value="Water">
+		<label for="element4" >Water</label><br><br>
+		<label>Shoe Size:</label>
+		<select id="size">
+			<option value="fourteen">14</option>
+			<option value="thirteen">13</option>
+			<option value="twelve">12</option>
+			<option value="eleven">11</option>
+			<option value="ten">10</option>
+			<option value="nine">9</option>
+			<option value="eight">8</option>
+			<option value="seven">7</option>
+			<option value="six">6</option>
+			<option value="five">5</option>
+		</select><br>
+		<label>Tell us a little about yourself:</label>
+		<textarea id="aboutyou"
+			placeholder="Type here.">
+		</textarea>
+	    </fieldset>
+	    <fieldset id ="button">
+		<legend>Subscribe</legend>
+	    	<input type="submit" id="submit" value="Submit">
+	    	<input type="reset" id="reset" value="Reset Fields">
+	    </fieldset>
+	    </form> 
+        </section>
+        <aside>
+            <h2>Legendary Creatures</h2>
+            <h3>Land Sentinel</h3>
+            <img src="../images/stonegolem.jpg" alt="Land Sentinel">
+            <a href="https://www.finalfantasyd20.com/bestiary/outsiders/elemental-family/earth-elemental/elder-earth-elemental/">Final Fantasy d20</a>
+            <h3>Oceanic Leviathan</h3>
+            <img src="../images/leviathan.png" alt="Oceanic Leviathan">
+            <a href="https://www.worldanvil.com/w/quentriandal-qurilion/a/cloud-whales-article">WorldAnvil</a>     
+        </aside>
+    </main>
+    <footer>
+        <p>&copy; 2022, Beasts and Magical Creatures, Trenton, FL 32693</p>
+    </footer>
+</body>
+</html>
