@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<!--Jonathan Robinson 
+    2022 Fall Semester
+    Professor Chambers
+    CGS1821.0M1 Web Auth 2 -->
+
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Deranged Cat</title>
+	<link rel="stylesheet" href="../styles/product.css">
+	<link rel="shortcut icon" href="../images/favicon.ico"> <!-- Added favicon shortcut-->
+	<link href="http://fonts.googleapis.com/css?family=Creepster" rel="stylesheet"> <!-- Added the google Creepster font-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../js/jquery.slicknav.min.js"></script>
+	<script type="text/javascript">
+    	$(document).ready(function(){
+			$('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+    	});
+    </script>
+</head>
+
+<body>
+  <header>
+	<img src="../images/pumpkin.gif" alt="Pumpkin" width="85" usemap="#pumpkin" /> <!-- Added a circular image map for the pumkin and linked it to home-->
+	<map name="pumpkin">
+   		<area href="../index.html" alt="Pumpkin" title="Pumpkin" 
+       		  shape="circle" coords="39,40,40">
+	</map>
+	<h2>The Halloween Store</h2>
+    <h3>For the little Goblin in all of us!</h3>
+  </header>
+  <nav id="nav_menu">
+  	<ul>
+    	<li><a href="../index.html">Home</a></li>
+    	<li><a href="../products/productList.html">Product List</a></li>
+    	<li><a href="../personal/index.html">Personal</a></li>
+    	<li><a href="../underconstruction/index.html">Decorating Ideas</a>
+    		<ul>
+    			<li><a href="../underconstruction/index.html">Outdoor</a></li>
+    			<li><a href="../underconstruction/index.html">Indoor</a></li>
+    			<li><a href="../underconstruction/index.html">Table</a></li>
+    			<li><a href="../underconstruction/index.html">Treats</a></li>
+    		</ul>
+    	</li>
+    	<li><a href="../email.html">Join Email</a></li>
+	</ul>
+  </nav>
+  <main>
+  	<aside id="aside1"> <!-- made an id for the sidebars-->
+		<nav id="nav_list">
+   		<ul>
+   			<li><a href="../props.html">Props</a></li>
+   			<li><a href="../underconstruction/index.html">Costumes</a></li>
+   			<li><a href="../underconstruction/index.html">Special FX</a></li>
+   			<li><a href="../underconstruction/index.html">Masks</a></li>
+		</ul>
+		</nav>
+  	</aside>
+
+  	<section>
+  		<h1>20" Deranged cat</h1>
+  		<img src="../images/cat1.jpg" alt="Deranged cat" height="150">
+  		<p>This cat provides its own light and is perfect for a backyard haunting.</p>
+  		<p><strong>Price:</strong> 19.99</p>
+  	</section>
+  
+  	<aside id="aside2"> <!-- Added a new right sidebar to link more products with images-->
+  		<h2>Customers who bought this product also bought:</h2>
+  		<ul>
+  			<li>
+  				<figure>
+  					<a href="../underconstruction/index.html"><img src="../images/flying_bats.jpg" alt="Flying bats" width="50" class="asideImage"></a>
+  					<figcaption><a href="../underconstruction/index.html">Flying bats</a></figcaption>
+  				</figure>
+  			</li>
+  			<li>
+  				<figure>
+  					<a href="../underconstruction/index.html"><img src="../images/rat1.jpg" alt="16-inch rat" width="50" class="asideImage"></a>
+  					<figcaption><a href="../underconstruction/index.html">16" Ugly rat</a></figcaption> 	
+  				</figure>
+  			</li>
+  			<li>
+  				<figure>
+  					<a href="../underconstruction/index.html"><img src="../images/strobe1.jpg" alt="Mini strobe" width="50" class="asideImage"></a>
+  					<figcaption><a href="../underconstruction/index.html">Mini strobe light</a></figcaption>   				
+  				</figure>
+  			</li>
+  		</ul>
+    </aside>
+  </main>
+  <footer>
+	<p>&copy; 2022 Ben Murach</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<!--Jonathan Robinson 
+    2022 Fall Semester
+    Professor Chambers
+    CGS1821.0M1 Web Auth 2 -->
+<!-- Created a 3 column table to display the products and prices. Links are added to the data row of the name for the product. -->
+
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Halloween Store</title>
+	<link rel="stylesheet" href="../styles/summary.css">
+	<link rel="stylesheet" href="../styles/slicknav.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../js/jquery.slicknav.min.js"></script>
+	<script type="text/javascript">
+    	$(document).ready(function(){
+			$('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+    	});
+    </script>
+</head>
+
+<body>
+
+  <header>
+  	<img src="../images/pumpkin.gif" alt="Pumpkin" width="85">
+   	<h2>The Halloween Store</h2>
+   	<h3>For the little Goblin in all of us!</h3>
+  </header>
+  <nav id="mobile_menu"></nav>
+  <nav id="nav_menu">
+  	<ul>
+    	<li><a href="../index.html">Home</a></li>
+    	<li><a href="../products/special.html" class="current">Product List</a></li>
+    	<li><a href="../personal/index.html">Personal</a></li>
+    	<li><a href="../underconstruction/index.html">Decorating Ideas</a>
+    		<ul>
+    			<li><a href="../underconstruction/index.html">Outdoor</a></li>
+    			<li><a href="../underconstruction/index.html">Indoor</a></li>
+    			<li><a href="../underconstruction/index.html">Table</a></li>
+    			<li><a href="../underconstruction/index.html">Treats</a></li>
+    		</ul>
+    	</li>
+    	<li><a href="../email.html">Join Email</a></li>
+	</ul>
+  </nav>
+  <main>
+	<section>
+    		<h2>Product List</h2>
+            <!--Table added with 3 collumns-->
+            <table>
+                <thead>
+                    <th>Category</th>
+                    <th>Description</th>
+                    <th class="rightHead">Price</th> <!--Class to be used to adjust the price head only-->
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class = "category">Props</td>
+                        <td><a href="../products/cat.html">20" Derganged cat</a></td>
+                        <td class="price">$39.99</td> <!--Class to be used to give it a background color and text align to the right-->
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><a href="../underconstruction/index.html">Flying bats</a></td>
+                        <td class="price">$14.99</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><a href="../underconstruction/index.html">16" Ugly rat</a></td>
+                        <td class="price">$14.99</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><a href="../underconstruction/index.html">20" Uglier rat</a></td>
+                        <td class="price">$19.99</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><a href="../underconstruction/index.html">Plastic skeleton</a></td>
+                        <td class="price">$12.50</td>
+                    </tr>
+                    <tr>
+                        <td class = "category">Costumes</td>
+                        <td><a href="../underconstruction/index.html">Austin Powers</a></td>
+                        <td class="price">$79.50</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><a href="../underconstruction/index.html">Frankenstein</a></td>
+                        <td class="price">$49.99</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><a href="../underconstruction/index.html">Martian</a></td>
+                        <td class="price">$69.99</td>
+                    </tr>
+                    <tr>
+                        <td class = "category">Special Effects</td>
+                        <td><a href="../underconstruction/index.html">Fog machine</a></td>
+                        <td class="price">$34.99</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><a href="../underconstruction/index.html">Fog juice</a></td>
+                        <td class="price">$9.99</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><a href="../underconstruction/index.html">Mini strobe light</a></td>
+                        <td class="price">$14.99</td>
+                    </tr>
+                    <tr>
+                        <td class = "category">Masks</td>
+                        <td><a href="../underconstruction/index.html">Freddy</a></td>
+                        <td class="price">$44.50</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><a href="../underconstruction/index.html">Darth Vader</a></td>
+                        <td class="price">$124.50</td>
+                    </tr>
+                </tbody>
+            </table>		
+	</section>
+	<aside>
+		<nav id="nav_list">
+   		<ul>
+   			<li><a href="../products/props.html">Props</a></li>
+   			<li><a href="../underconstruction/index.html">Costumes</a></li>
+   			<li><a href="../underconstruction/index.html">Special FX</a></li>
+   			<li><a href="../underconstruction/index.html">Masks</a></li>
+		</ul>
+		</nav>
+	</aside>
+  </main>
+
+  <footer>
+	<p>&copy; 2022 Ben Murach</p>
+  </footer>
+</body>
+</html>

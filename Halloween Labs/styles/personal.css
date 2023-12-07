@@ -1,0 +1,211 @@
+/*Jonathan Robinson 
+    2022 Fall Semester
+    Professor Chambers
+    CGS1821.0M1 Web Auth 2 */
+
+html {
+	background-image: url("../images/bats.gif");	
+}
+body  {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	width: 95%;
+	max-width: 960px; /* Was 800px*/
+	background-color: white;
+	margin: 0 auto; 
+	padding: 0;
+	border: 3px solid black;
+	box-shadow: 0 9px 18px 9px;
+}
+h1, h2, h3, p {
+	margin: 0;
+	padding: 0;
+}
+
+/* Header */
+header { 
+    background-image: linear-gradient(45deg, white 0%, orange 75%, black 100%);
+    padding: 15px;
+} 
+header img { 
+	float: left; 
+	padding-right: .9375em;
+	max-width: 960px; 
+	min-width: 40px; 
+} 
+header h2 {
+	font-size: 230%;
+}
+header h3 {
+	font-size: 125%;
+	padding-bottom: .9375em; 
+}
+
+/* Navigation menu */
+#nav_menu {
+	clear: left;
+}
+#nav_menu ul {
+	list-style: none;
+	position: relative;
+	width: 100%;
+}
+#nav_menu ul li {
+	float: left;
+	width: 20%;
+}
+#nav_menu ul ul {
+	display: none;
+	position: absolute;
+	top: 100%;
+}
+#nav_menu ul ul li {
+	float: none;
+}
+#nav_menu ul li:hover > ul {
+	display: block;
+}
+#nav_menu > ul::after {
+	content: "";
+	clear: both;
+	display: block;
+}
+#nav_menu ul {
+	margin: 0;
+	padding: 0;
+}
+#nav_menu ul li a {
+	text-align: center;
+	display: block;
+	padding: .7em 0;
+	text-decoration: none;
+	background-color: black;
+	color: white;
+}
+#nav_menu ul li a.current {
+	color: orange;
+}
+#nav_menu ul li a:hover, #nav_menu ul li a:focus {
+	background-color: gray;
+}
+
+/* Sidebar */
+aside {
+	float: left; 
+	width: 20%;
+}
+#nav_list ul { 
+	list-style: none;
+	padding-left: 1.5em;
+}
+#nav_list ul li { 
+	width: 110px;
+	margin-bottom: .5em;
+	border: 2px solid black; }
+#nav_list ul li a {
+	display: block;
+	font-weight: bold;
+	text-decoration: none;
+	background-color: orange;
+	padding: .5em 0 .5em .5em;
+	color: black;
+}
+
+/* Section */
+section {
+	width: 72.5%;
+	padding-top: 1.5em;
+    padding-right: 4.5em;
+	padding-bottom: 2em;
+	float: right;	
+}
+section h1 { 
+	font-size: 140%;
+	margin-bottom: .5em;
+}
+section h2 {
+	font-size: 125%;
+	margin: .8em 0 .5em 0;
+}
+
+
+/* Footer */
+footer { 
+	clear: both;
+	border-top: 2px solid black;
+	padding: .9375em; 
+    background-image: linear-gradient(45deg, black 0%, orange 25%, white 100%);
+} 
+footer p {
+	font-size: 90%;
+	text-align: center;
+}
+#mobile_menu {
+	display: none;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 800px) {
+	html {
+		background-image: none;
+		font-size: 90%;
+	}
+	body {
+		box-shadow: none;
+		font-size: 90%;
+	}
+}
+
+/* Media query to remove the nav menu and add a mobile menu while making
+	the page one collumn */
+@media only screen and (max-width: 767px) {
+	#nav_menu {
+		display: none;
+	}
+	.slicknav_menu {
+        background: dimgray !important;
+	    padding: 3px !important;
+    }
+
+    #mobile_menu {
+		display: block;
+	}
+    #mobile_menu ul {
+        background-color: #232323;
+    }
+    #mobile_menu a {
+        background-color: #232323;
+    }
+    #mobile_menu a:hover, #mobile_menu a:focus {
+        color: dimgray;
+    }
+	header h2 {
+		font-size: 200%;
+	}
+	section {
+		float: none;
+        width: 93.3334%;
+	}
+	aside {
+		float: none;        
+		width: 93.3334%;
+        padding-top: 0;
+        padding-bottom: 1.5625em;
+	}
+
+	/* Centers the aside list to the middle of page */
+	#nav_list ul li {
+		display: block;
+		text-align: center;
+		padding: 0 7em;
+		background-color: orange;
+	}
+}
+/* reduces the font sizes again */
+@media only screen and (max-width: 479px) {
+	header {
+		font-size: 90%;
+	}
+	section h1 {
+		font-size: 90%;
+	}
+}
